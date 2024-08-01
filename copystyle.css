@@ -1,0 +1,670 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'apple',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@font-face {
+    font-family: 'apple';
+    src: url(font/apple.woff2);
+}
+
+html{
+    scroll-behavior: smooth;
+    user-select: none;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+html body{
+    height: 100%;
+    overflow-x: hidden;
+    cursor: pointer;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+}
+
+.container{
+    position: fixed;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    transition: all .55s ease;
+}
+
+.logopack{
+    flex-grow: 1;
+}
+
+.logopack img{
+    max-width: 100%;
+    height: auto;
+    transition: all .55s ease;
+}
+
+.logopack img:hover{
+    transform: translatey(5px)
+}
+
+nav{
+    flex-grow: 2;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 0 50px;
+    color: #877BD5;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    font-size: 1rem;
+    transition: all .55s ease;
+}
+
+nav ul li a:hover{
+    color: #7f8e53;
+}
+
+.wp{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.centertxt{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: #7f8e53;
+    letter-spacing: 5px;
+    bottom: 350px;
+}
+
+.centername{
+    font-size: 75px;
+    margin-right: 72.75%;
+}
+
+.ccc{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ccc h1{
+    padding: 0 1vw;
+    font-size: 180px;
+}
+
+.work{
+    background-color: #7f8e53;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    padding: 100px;
+    align-items: center;
+    position: relative;
+}
+
+.breif{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    width: 100%;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}
+
+.myservice, .WID, .servicedetail{
+    margin-bottom: 20px;
+}
+
+.myservice{
+    color: white;
+    font-size: small;
+}
+
+.WID{
+    color: black;
+    font-size: 60px;
+    padding: 20px;
+}
+
+.servicedetail{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+    max-width: 800px;
+}
+
+.profilepic{
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+
+.profilepic img{
+    width: 325px;
+    height: auto;
+    border-radius: 55px;
+    object-fit: cover;
+    transition: all .55s ease;
+}
+
+.profilepic img:hover{
+    transform: rotate(360deg);
+    translateY(10px);
+}
+
+.photosection{
+    background-color: #e1e4e5;
+    padding: 40px 0;
+}
+
+.headingphoto{
+    color: black;
+    text-align: center;
+    padding: 30px;
+    font-size: 60px;
+    padding-top: 40px;
+    letter-spacing: 4px;
+}
+
+.imagecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0px;
+    padding-bottom: 70px;
+    box-sizing: border-box;
+}
+.imagecontainer[data-animated="true"]{
+    overflow: hidden;
+}
+
+.photo-row {
+    display: flex;
+    width: 100%;
+    animation: scroll 20s linear infinite;
+}
+
+.photo-row img {
+    width: 12%;
+    height: 50%;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 20px;
+    transition: transform 0.5s;
+}
+
+.photo-row .rect-photo {
+    width: 40%;
+    height: auto;
+}
+
+@keyframes scroll {
+    from{
+        transform: translate(100%);
+    }
+    to{
+        transform: translate(-250%);
+    }
+}
+.imagecontainer[data-animated="true"] .photo-row{
+    flex-wrap: nowrap;
+    animation: scroll 40s infinite linear;
+}
+
+.cgsection{
+    background-color: white;
+    text-align: center;
+    color: #7060DE;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.cgmain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    font-size: 60px;
+    margin-top: -100px;
+}
+
+.cgbreif{
+    text-align: center;
+    max-width: 60%;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.filmlink{
+    padding: 20px;
+}
+
+.filmlink a{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #7060DE;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all, .55s ease;
+}
+.filmlink a:hover{
+    background-color: #0C0B35;
+    transform: translateY(-5px);
+}
+
+.videobox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.shvideo{
+    width: 640px;
+    height: 360px;
+    overflow: hidden;
+}
+
+.shvideo video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+    border-radius: 30px;
+    cursor: pointer;
+}
+ video :hover{
+    filter:blur(20%);
+ }
+
+    
+.blenderdetail{
+    background-color: #483D8B;
+    height: 950px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+.blendermain{
+    cursor: pointer;
+}
+.blenderheading{
+    margin-top: -50px;
+    padding: 30px;
+    font-size: 60px;
+}
+
+.blenderbreif{
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px;
+    font-size: 30px;
+}
+
+.contact-section{
+    background-color: #0C0B35;
+    color: white;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.contact-container{
+    text-align: center;
+    padding: 30px;
+}
+
+.email-container h1{
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.e-link{
+    padding: 10px;
+}
+
+.e-link a:hover{
+    background-color: black;
+}
+
+.email-link{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFA800;
+    border: none;
+    border-radius: 30px;
+    color: white;
+}
+
+.sm-container{
+    padding: 10px;
+}
+
+.sm-head{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.insta-link{
+    padding: 10px;
+}
+
+.insta-link img{
+    width: 50px;
+    height: auto;
+}
+
+.cr-text p{
+    letter-spacing: 0.5px;
+    font-size: large;
+    font-weight: 100;
+    cursor: pointer;
+}
+.insta-link a img:hover{
+    background-color: #FFA800;
+    border-radius: 50px;
+}
+
+.b-videobox{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.b-videobox video{
+    width: 500px;
+    padding: 50px;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+    .work, .photosection, .cgsection, .blenderdetail, .contact-section{
+        padding: 20px;
+    }
+    .breif, .cgdetail .blendermain .contact-section{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .profilepic img{
+        width: 80%;
+    }
+    .imagecontainer img{
+        padding: 0 10px;
+    }
+    .cgmain, .blenderheading{
+        font-size: 40px;
+    }
+    .cgbreif, .blenderbreif{
+        font-size: 20px;
+        padding: 20px;
+    }
+    .videobox, .b-videobox{
+        flex-direction: column;
+        align-items: center;
+    }
+    .shvideo, .b-videobox video{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+} 
+@media (max-width: 769px){
+    nav ul li a {
+        padding: 0 10px;
+        font-size: 0.8rem;
+    }
+    .centername{
+        position: relative;
+        margin-left: 300px;
+        font-size: 4vw;
+        top: 120px;
+    }
+    .work{
+        height: auto;
+    }
+    .breif{
+        padding: 20px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .ccc h1{
+        position: relative;
+        top: 150px;
+        font-size: 15vw;
+    }
+    .text-container{
+        width: 80%;
+        padding: 20px;
+    }
+    .servicedetail{
+        text-align: center;
+    }
+    .myservice{
+        padding: 0px;
+    }
+    .WID{
+        padding: 0;
+    }
+    .profilepic img{
+        width: 50%;
+        height: auto;
+        margin-left: 0px;
+        padding: 20px;
+    }
+    .photosection{
+        height: auto;
+    }
+    .headingphoto{
+        font-size: 30px;
+        padding: 30px;
+        padding-bottom: 50px;
+    }
+    .imagecontainer{
+        padding: 20px;
+        gap: 50px;
+        padding-bottom: 60px;
+    }
+    .imagecontainer img{
+        width: 50%;
+        height: auto;
+    }
+    .cgsection{
+        height: auto;
+    }
+    .cgdetail{
+        padding: 50px;
+        align-items: center;
+    }
+    .cgmain{
+        padding-top: 80px;
+    }
+    .cgbreif{
+        max-width: 90%;
+    }
+    .cgmain, .blenderheading{
+        font-size: 30px;
+    }
+    .cgbreif, .blenderbreif{
+        font-size: 18px;
+    }
+    .shvideo video{
+        width: 70%;
+    }
+    .b-videobox{
+        width: 50%;
+        height: auto;
+        margin-left: 185px;
+        margin-bottom: -100px;
+    }
+    .b-videobox video{
+        border-radius: 80px;
+        padding: 30px;
+    }
+    .blenderheading{
+        padding-top: 10px;
+    }
+    .blendermain{
+        padding-bottom: -100%;
+        margin-top: -80px;
+    }
+    .contact-section{
+        height: auto;
+    }
+    .contact-container{
+        height: auto;
+    }
+    .email-container h1{
+        font-size: 20px;
+        margin-top: -30px;
+    }
+    .sm-container h1{
+        font-size: 20px;
+    }
+    .cr-text p{
+        margin-bottom: -20px;
+        margin-top: -10px;
+    }
+    .filmlink a:hover{
+        background-color: #0C0B35;
+    }
+}
+@media (max-width: 380px){
+    .centername{
+        position: relative;
+        margin-left: 140px;
+    }
+    .b-videobox{
+        position: relative;
+        margin-left: 80px;
+        border-radius: none;
+        padding: 0px;
+    }
+}
+@media (max-width: 180px){
+    .centername{
+        position: relative;
+        margin-left: 55px;
+    }
+    .blenderdetail{
+        height: 100%;
+    }
+}
+@media (max-width: 300px){
+    .centername{
+        position: relative;
+        margin-left: 105px;
+    }
+}
+@media (max-width: 343px){
+    .centername{
+        position: relative;
+    }
+}
+@media (max-width: 460px){
+    .centername{
+        position: relative;
+        margin: auto;
+    }
+    .b-videobox{
+        position: relative;
+        margin: auto;
+    }
+}
+@media (max-width: 500px){
+    .centername{
+        position: relative;
+        margin: auto;
+    }
+    body{
+        margin: auto;
+    }
+    .b-videobox{
+        position: relative;
+        margin: auto;
+    }
+}
+@media (max-width: 540px){
+    .centername{
+        position: relative;
+        margin: 0;
+    }
+    .b-videobox{
+        position: relative;
+        margin: auto;
+    }
+    .b-videobox video{
+        border-radius: 4rem;
+    }
+    .blendermain{
+        position: relative;
+        top: 50px;
+    }
+    .blenderdetail{
+        max-height: 925px;
+    }
+}
