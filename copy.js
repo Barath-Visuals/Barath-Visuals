@@ -22,7 +22,26 @@ if (!window.matchMedia("(perfers-reduced-motion: reduce)").matches) {
 }
 
 function addAnimation() {
-    imagecontainers.forEach(imagecontainer => {
-        imagecontainer.setAttribute("data-animated",true);
-    })
+    imagecontainers.forEach((imagecontainer) => {
+        imagecontainer.setAttribute("data-animated", true);
+
+        const photoRows = imagecontainer.querySelectorAll(".photo-row.row-1, .photo-row.row-2");
+
+        if (photoRows.length === 0) {
+            console.warn("No .photo-row.row-1 or .photo-row.row-2 elements found in this .imagecontainer.");
+        }
+
+        photoRows.forEach(photoRow => {
+
+            const picturescontent = Array.from(photoRow.children);
+
+            picturescontent.forEach((item) => {
+                const duplicatedItem = item.cloneNode(true);
+                console.log(duplicatedItem);
+
+                duplicatedItem.setAttribute("aria-hidden", true);
+                photoRow.appendChild(duplicatedItem);
+            })
+        });
+    });
 }
