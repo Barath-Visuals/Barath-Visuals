@@ -12,8 +12,6 @@ html{
     scroll-behavior: smooth;
     user-select: none;
     overflow-x: hidden;
-    width: 100%;
-    height: 100%;
 }
 
 html body{
@@ -42,6 +40,7 @@ header {
     max-width: 1200px;
     padding: 20px;
     transition: all .55s ease;
+    padding-top: 40px;
 }
 
 .logopack{
@@ -49,7 +48,7 @@ header {
 }
 
 .logopack img{
-    max-width: 100%;
+    width: 9rem;
     height: auto;
     transition: all .55s ease;
 }
@@ -73,7 +72,7 @@ nav ul li a {
     text-decoration: none;
     padding: 0 50px;
     color: #877BD5;
-    font-weight: bold;
+    font-weight: medium;
     letter-spacing: 0.8px;
     font-size: 1rem;
     transition: all .55s ease;
@@ -187,12 +186,12 @@ nav ul li a:hover{
 }
 
 .photosection{
-    background-color: #e1e4e5;
+    background-color: black;
     padding: 40px 0;
 }
 
 .headingphoto{
-    color: black;
+    color: rgb(108, 108, 108);
     text-align: center;
     padding: 30px;
     font-size: 60px;
@@ -234,17 +233,14 @@ nav ul li a:hover{
 }
 
 @keyframes scroll {
-    from{
-        transform: translate(100%);
-    }
     to{
-        transform: translate(-250%);
+        transform: translate(-500%);
     }
 }
 
 .imagecontainer[data-animated="true"] .photo-row{
     flex-wrap: nowrap;
-    animation: scroll 40s infinite linear;
+    animation: scroll 60s infinite linear;
 }
 
 .cgsection{
@@ -349,76 +345,110 @@ nav ul li a:hover{
     padding: 40px;
     font-size: 30px;
 }
-
-.contact-section{
-    background-color: #0C0B35;
-    color: white;
+#contactus{
+    background-color: #04041f;
+}
+.ccc-image img{
+    width: 8vw;
     height: auto;
+}
+.logo-rights{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    position: relative;
 }
-
-.contact-container{
-    text-align: center;
-    padding: 30px;
-}
-
-.email-container h1{
-    padding: 10px;
-    font-size: 30px;
-    font-weight: 400;
-}
-
-.e-link{
-    padding: 10px;
-}
-
-.e-link a:hover{
-    background-color: black;
-}
-
-.email-link{
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #FFA800;
-    border: none;
-    border-radius: 30px;
-    color: white;
-}
-
-.sm-container{
-    padding: 10px;
-}
-
-.sm-head{
-    font-size: 30px;
-    font-weight: 400;
-}
-
-.insta-link{
-    padding: 10px;
-}
-
-.insta-link img{
-    width: 50px;
+.logo-rights .design-mark{
+    width: 6vw;
     height: auto;
 }
-
-.cr-text p{
-    letter-spacing: 0.5px;
-    font-size: large;
-    font-weight: 100;
-    cursor: pointer;
+.logo-rights img{
+    width: 8vw;
+    height: auto;
 }
-.insta-link a img:hover{
-    background-color: #FFA800;
+.footer-sitemap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-sitemap .foot-span span{
+    color: #959595;
+    font-size: 20px;
+    font-weight: 700;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 1800px;
+    padding: 40px;
+}
+#contactus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us{
+    padding-bottom: 10px;
+}
+.contact-us a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: #959595;
     border-radius: 50px;
+}
+.copyrights p{
+    color: #959595;
+    font-size: 15px;
+    padding: 30px;
+}
+hr {
+    border: none;
+    border-top: 2px solid #959595;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.foot-link{
+    background-color: #959595;
+    opacity: 0.8;
+    border-radius: 8px;
+    position: fixed;
+    bottom: 20px;
+    align-items: center;
+    display: flex;
+    padding: 5px 5px;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: 1000;
+}
+.foot-link ul{
+    display: flex;
+    padding: 15px 5px;
+    list-style-type: none;
+    gap: 5px;
+}
+
+.foot-link ul li a{
+    padding: 10px 20px;
+    background-color: #141414;
+    border-radius: 8px;
+    border: 1.2px solid transparent;
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: #959595;
+    transition: color 0.3s ease;
+}
+.foot-link ul li a:hover{
+    color: #ffae00;
+    border: 1.2px solid #ffae00;
 }
 
 .b-videobox{
