@@ -652,7 +652,7 @@ hr {
     .footer-sitemap .foot-link{
         align-items: center;
         justify-content: center;
-        padding: 4px 4px 10px 4px;
+        padding: 3px 3px 10px 3px;
     }
     .footer-container{
         padding: 0;
@@ -686,5 +686,31 @@ hr {
     }
     .container .logopack .logo{
         margin-left: 10px;
+    }
+    .title-detail .title .alert{
+        font-size: 0.5rem;
+    }
+    .title-detail{
+        padding-bottom: 15px;
+    }
+    .sidebar{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar li{
+        width: 100%;
+        margin-left: 50%;
+    }
+    .sidebar li a{
+        font-size: 1rem;
+        text-align: center;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        user-select: none;
     }
 }
