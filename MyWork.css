@@ -679,10 +679,13 @@ hr {
         width: 60%;
     }
     .container .logopack{
-        width: 60%;
+        width: 40%;
     }
     .navigation ul .menu-button svg{
-        width: 60%;
+        width: 80%;
+    }
+    .menu-button{
+        margin-left: 250px;
     }
     .container .logopack .logo{
         margin-left: 10px;
@@ -712,5 +715,11 @@ hr {
         outline: none;
         box-shadow: none;
         user-select: none;
+    }
+}
+@media (max-width: 500px){
+    .container .navigation .menu-button {
+        width: 30px;
+        margin-left: 100px;
     }
 }
